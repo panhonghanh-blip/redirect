@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Redirect</title>
+
+<script>
+const routes = {
+"fb": "https://www.facebook.com/share/16xLSeqJG8/?mibextid=wwXIfr"
+};
+
+const path = window.location.pathname.replace("/","");
+
+if(routes[path]){
+window.location.replace(routes[path]);
+}
+</script>
+
+</head>
+
+<body>
+Redirecting...
+</body>
+</html>
