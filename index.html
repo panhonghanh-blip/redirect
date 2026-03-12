@@ -2,23 +2,29 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Redirect</title>
+<title>Redirect Tool</title>
 
 <script>
-const routes = {
-"fb": "https://www.facebook.com/share/16xLSeqJG8/?mibextid=wwXIfr"
+
+const links = {
+  "fb": "https://www.facebook.com/share/16xLSeqJG8/?mibextid=wwXIfr",
+  "deal": "https://shopee.vn",
+  "sp39k": "https://shopee.vn"
 };
 
 let path = window.location.pathname.split("/").pop();
 
-if(routes[path]){
-window.location.replace(routes[path]);
+if(links[path]){
+  window.location.href = links[path];
 }
+
 </script>
 
 </head>
 
 <body>
-Redirecting...
+
+<h2>Redirecting...</h2>
+
 </body>
 </html>
