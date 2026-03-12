@@ -9,7 +9,7 @@ const routes = {
 "fb": "https://www.facebook.com/share/16xLSeqJG8/?mibextid=wwXIfr"
 };
 
-const path = window.location.pathname.replace("/","");
+let path = window.location.pathname.split("/").pop();
 
 if(routes[path]){
 window.location.replace(routes[path]);
