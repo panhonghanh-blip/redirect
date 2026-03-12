@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<script>
+
+const links = {
+  "fb": "https://www.facebook.com/share/16xLSeqJG8/?mibextid=wwXIfr"
+};
+
+let path = window.location.pathname.split("/").pop();
+
+if(links[path]){
+  window.location.href = links[path];
+}
+
+</script>
+
+</head>
+
+<body>
+
+Redirecting...
+
+</body>
+</html>
